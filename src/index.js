@@ -1,5 +1,6 @@
 /* eslint-disable no-console */
 // feathers g app
+// feathers g authentication
 const logger = require('./logger');
 const app = require('./app');
 const port = app.get('port');
