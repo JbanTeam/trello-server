@@ -7,7 +7,7 @@
     "max": 1000
   },
   "authentication": {
-    "secret": "9d7ee14d336d8d02197ac9e95c8e03a71012d7fc125d8b315a418635cf42787a668b5da2b58c5106cf8dbf087654032f2f9884fffe154e69b9fa039237ae70a066a635cada85a7f9d62beeeb8331eb9774d35ef0c5bf5008c0cc77d80d6d657c5391e329e9aa319618ff9b8bbf2bc0c6241d2a7c7e8f107241bd3cc0952a5be04816e088ab99451215b9fc4edb5d1017b43c45d38532bd0759db1542f379c48e9209232cb6e7bfc90e383c60c25bcce7ab1d598608b2bcaadbce82770dc6f794ee2b14994db08a3ef48fc9a1e7bb5477d517530362a8da8cb78b89c040eeb2bc057b5ac7cf396154a124fdfd17464f587d3d6dab0f8add3f22127c737cbe0e33",
+    "secret": "AUTH_SECRET",
     "strategies": [
       "jwt",
       "local"
@@ -18,7 +18,7 @@
       "header": {
         "typ": "access"
       },
-      "audience": "https://yourdomain.com",
+      "audience": "https://cg-trello-clone.now.sh",
       "subject": "anonymous",
       "issuer": "feathers",
       "algorithm": "HS256",
@@ -26,7 +26,7 @@
     },
     "local": {
       "entity": "user",
-      "usernameField": "email",
+      "usernameField": "\\username",
       "passwordField": "password"
     }
   },
