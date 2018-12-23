@@ -5,12 +5,18 @@ const {
   isBoardOwner
 } = require('../../hooks/authorization')
 
+const hooks = require('feathers-authentication-hooks')
+
 module.exports = {
   before: {
     all: [authenticate('jwt'), isBoardOwner],
     find: [],
     get: [],
-    create: [],
+    create: [
+      hooks.associateCurrentUser({
+        as: 'userId'
+      })
+    ],
     update: [],
     patch: [],
     remove: []
