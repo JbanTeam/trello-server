@@ -18,7 +18,7 @@
       "header": {
         "typ": "access"
       },
-      "audience": "https://cg-trello-clone.now.sh",
+      "audience": "https://jt.numble.net",
       "subject": "anonymous",
       "issuer": "feathers",
       "algorithm": "HS256",
@@ -30,5 +30,5 @@
       "passwordField": "password"
     }
   },
-  "mongodb": "mongodb://localhost:27017/trello_clone"
+  "mongodb": "MONGO_DB_URI"
 }
